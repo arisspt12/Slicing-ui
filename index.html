@@ -1,0 +1,404 @@
+<html>
+ <head>
+  <title>
+   Hotel Of Suun
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .nav {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .header .nav li {
+            margin-left: 20px;
+        }
+        .header .nav li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .header .login-btn {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hero .hero-text h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero .hero-text p {
+            font-size: 24px;
+        }
+        .booking-form {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+        }
+        .booking-form select, .booking-form input {
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .section .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .section .content .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .section .content .text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .section .content .text .btn {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .section .content .images {
+            display: flex;
+        }
+        .section .content .images img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .rooms {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .rooms .room {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .rooms .room img {
+            width: 100%;
+            height: auto;
+        }
+        .rooms .room .info {
+            padding: 10px;
+        }
+        .rooms .room .info h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .rooms .room .info p {
+            font-size: 14px;
+            margin: 0 0 10px;
+        }
+        .rooms .room .info .btn {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .container .column {
+            width: 30%;
+        }
+        .footer .container .column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer .container .column p, .footer .container .column ul {
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .footer .container .column ul li {
+            margin-bottom: 5px;
+        }
+        .footer .container .column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="container">
+    <div class="logo">
+     HOTEL OF SUUN
+    </div>
+    <ul class="nav">
+     <li>
+      <a href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Booking
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Service
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Blog
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Contact Us
+      </a>
+     </li>
+    </ul>
+    <a class="login-btn" href="#">
+     LOGIN
+    </a>
+   </div>
+  </div>
+  <div class="hero">
+   <img alt="Hotel exterior view at night with lights reflecting on water" height="500" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-OpDhdnBDm7U1VRpkkBykCM2f.png?st=2024-10-01T05%3A41%3A10Z&amp;se=2024-10-01T07%3A41%3A10Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T03%3A04%3A53Z&amp;ske=2024-10-02T03%3A04%3A53Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=a0%2BRsKaqskO0NxDYvUcIWXUqbyj0hCCLd%2BALPFJQpUA%3D" width="1200"/>
+   <div class="hero-text">
+    <h1>
+     Welcome to Hotel Of Suun
+    </h1>
+    <p>
+     Hotel Of Suun
+    </p>
+   </div>
+  </div>
+  <div class="booking-form">
+   <select>
+    <option>
+     Date
+    </option>
+   </select>
+   <select>
+    <option>
+     Date
+    </option>
+   </select>
+   <select>
+    <option>
+     Adult
+    </option>
+   </select>
+   <select>
+    <option>
+     Children
+    </option>
+   </select>
+  </div>
+  <div class="section">
+   <div class="container">
+    <div class="content">
+     <div class="text">
+      <h2>
+       Selamat Datang Di Hotel, Hotel Of Suun
+      </h2>
+      <p>
+       Hotel Of Suun merupakan salah satu hotel terbaik di Asia, kami menyediakan berbagai fasilitas yang dapat memanjakan anda selama menginap di hotel kami. Kami juga menyediakan berbagai macam makanan dan minuman yang siap memanjakan lidah anda.
+      </p>
+      <a class="btn" href="#">
+       Show More
+      </a>
+     </div>
+     <div class="images">
+      <img alt="Hotel lobby with modern furniture" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-m9GjlG8Q0tfkeVRk65dvCMzs.png?st=2024-10-01T05%3A41%3A10Z&amp;se=2024-10-01T07%3A41%3A10Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T07%3A00%3A51Z&amp;ske=2024-10-01T07%3A00%3A51Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Oa2ASzwXWPWY5yMKfptS91p6zT/e99FoAx%2BfzbV9UZ0%3D" width="100"/>
+      <img alt="Hotel room with city view" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-AKXctIlYum2PTN0AWJs8F8TX.png?st=2024-10-01T05%3A41%3A11Z&amp;se=2024-10-01T07%3A41%3A11Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T02%3A31%3A48Z&amp;ske=2024-10-02T02%3A31%3A48Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=T8zsIr4Ne0fyjhS8Y8C7BKhyX0pnfb0DfL6x6gtNei8%3D" width="100"/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="section">
+   <div class="container">
+    <h2>
+     Kamar &amp; Fasilitas
+    </h2>
+    <div class="rooms">
+     <div class="room">
+      <img alt="Deluxe room with king size bed" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-fUnIggyDeaHIF1swixgrWqXg.png?st=2024-10-01T05%3A41%3A10Z&amp;se=2024-10-01T07%3A41%3A10Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T01%3A02%3A30Z&amp;ske=2024-10-02T01%3A02%3A30Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=27YnynptZKJ9MKY30uaNrxtLPFoLGqJ2eJG51/Yuloo%3D" width="300"/>
+      <div class="info">
+       <h3>
+        Deluxe Room
+       </h3>
+       <p>
+        Fasilitas lengkap dengan pemandangan kota.
+       </p>
+       <a class="btn" href="#">
+        Book Now
+       </a>
+      </div>
+     </div>
+     <div class="room">
+      <img alt="Suite room with living area" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-F0RsM6GxhvpAKUH4K3VFpd0L.png?st=2024-10-01T05%3A41%3A12Z&amp;se=2024-10-01T07%3A41%3A12Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T14%3A18%3A07Z&amp;ske=2024-10-01T14%3A18%3A07Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=i0I8g/xe13Lx/bGXNaDyzm2Ic%2BZRWVXlC23R32eP2YA%3D" width="300"/>
+      <div class="info">
+       <h3>
+        Suite Room
+       </h3>
+       <p>
+        Ruang tamu terpisah dengan pemandangan laut.
+       </p>
+       <a class="btn" href="#">
+        Book Now
+       </a>
+      </div>
+     </div>
+     <div class="room">
+      <img alt="Standard room with twin beds" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-hXZ0z4mBBxZGmzvgoX2qmKZC.png?st=2024-10-01T05%3A41%3A08Z&amp;se=2024-10-01T07%3A41%3A08Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T15%3A27%3A47Z&amp;ske=2024-10-01T15%3A27%3A47Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=hLFdA3nNIZ2isx7l7ev0cxRIH7wmpuEAk8iXxW5M8qA%3D" width="300"/>
+      <div class="info">
+       <h3>
+        Standard Room
+       </h3>
+       <p>
+        Kamar nyaman dengan harga terjangkau.
+       </p>
+       <a class="btn" href="#">
+        Book Now
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="section" style="background-color: #f8f8f8;">
+   <div class="container">
+    <h2>
+     Our Services &amp; Features
+    </h2>
+    <div class="content">
+     <div class="text">
+      <p>
+       Kami menyediakan berbagai layanan dan fasilitas untuk kenyamanan anda selama menginap di hotel kami. Mulai dari layanan kamar 24 jam, kolam renang, pusat kebugaran, spa, dan masih banyak lagi.
+      </p>
+     </div>
+     <div class="images">
+      <img alt="Hotel lounge area" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-Ou8xRNFucEIcFBmsPMFqYlEk.png?st=2024-10-01T05%3A41%3A08Z&amp;se=2024-10-01T07%3A41%3A08Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T01%3A12%3A07Z&amp;ske=2024-10-02T01%3A12%3A07Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=hUN0Nvw5SRClUqqJKr5fsF8NicxFlQOVcCxNgOhKHuY%3D" width="100"/>
+      <img alt="Hotel restaurant" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-UKe8oKJiu8zeePE5aNuoQyYM.png?st=2024-10-01T05%3A41%3A08Z&amp;se=2024-10-01T07%3A41%3A08Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T02%3A19%3A59Z&amp;ske=2024-10-02T02%3A19%3A59Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BKaFKm5RkmoBoflp9TxDYmGciSydzA98/AffswS73Bk%3D" width="100"/>
+      <img alt="Hotel swimming pool at night" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-Nclxl7OOQJwGS3KkhiRTUxEx.png?st=2024-10-01T05%3A41%3A10Z&amp;se=2024-10-01T07%3A41%3A10Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T01%3A10%3A28Z&amp;ske=2024-10-02T01%3A10%3A28Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Mq4XcanPhTFHSriMs9E1/hMySRyur8cr1coQTUc%2BwcY%3D" width="100"/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="container">
+    <div class="column">
+     <h3>
+      HOTEL OF SUUN
+     </h3>
+     <p>
+      Indonesia, Asia
+     </p>
+    </div>
+    <div class="column">
+     <h3>
+      Quick Link
+     </h3>
+     <ul>
+      <li>
+       <a href="#">
+        Privacy Policy
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        Terms &amp; Conditions
+       </a>
+      </li>
+      <li>
+       <a href="#">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="column">
+     <h3>
+      Contact Info
+     </h3>
+     <p>
+      Email: info@hotelofsuun.com
+     </p>
+     <p>
+      Phone: +62-123-4567-890
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
